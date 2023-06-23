@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tipe data objek</title>
+  </head>
+  <body>
+    <script>
+      const orang = {};
+
+      //   menambah atau mengubah
+      orang["nama"] = "muhammad ilham";
+      orang["umur"] = "18 tahun";
+      orang["pekerjaan"] = "programmer";
+
+      console.table(orang);
+      //   menghapus
+      delete orang["umur"];
+      console.table(orang);
+
+      const person = {
+        nama: "muhammad Ilham",
+        umur: "18 tahun",
+        pekerjaan: "programmer",
+      };
+      console.info(`Nama : ${person.nama}`);
+      console.info(`Umur : ${person.umur}`);
+      console.info(`Pekerjaan : ${person.pekerjaan}`);
+      console.table(person);
+    </script>
+  </body>
+</html>
