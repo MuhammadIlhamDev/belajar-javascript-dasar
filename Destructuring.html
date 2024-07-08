@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring</title>
+  </head>
+  <body>
+    <script>
+      // Destructuring Manual
+      // const names = ["a", "b", "c"];
+
+      // const firstName = names[0];
+      // const secondName = names[1];
+      // const thirdName = names[2];
+
+      // console.log(firstName);
+      // console.log(secondName);
+      // console.log(thirdName);
+
+      {
+        // Destructuring Array
+        // const names = ["a", "b", "c", "d", "e"];
+        // const [firstName, secondName, thirdName, ...rest] = names;
+        // console.log(firstName);
+        // console.log(secondName);
+        // console.log(thirdName);
+        // console.log(rest);
+      }
+
+      {
+        // Destructuring Object
+        // const person = {
+        //   firstName: "Muhammad",
+        //   lastName: "Ilham",
+        //   age: 21,
+        //   address: {
+        //     country: "Indonesia",
+        //     city: "Bandung",
+        //   },
+        //   hoby: ["Coding", "Reading"],
+        //   channel: "Programming zaman now",
+        // };
+        // let { firstName, lastName, age, address, ...rest } = person;
+        // console.log(firstName);
+        // console.log(lastName);
+        // console.log(age);
+        // console.log(address);
+        // console.log(rest);
+      }
+
+      {
+        // Nested Destructuring Object
+        // const person = {
+        //   firstName: "Muhammad",
+        //   lastName: "Ilham",
+        //   age: 21,
+        //   address: {
+        //     country: "Indonesia",
+        //     city: "Bandung",
+        //   },
+        //   hoby: ["Coding", "Reading"],
+        //   channel: "Programming zaman now",
+        // };
+        // let { firstName, lastName, age, address: { country, city }, ...rest } = person;
+        // console.log(firstName);
+        // console.log(lastName);
+        // console.log(age);
+        // console.log(country);
+        // console.log(city);
+        // console.log(rest);
+      }
+
+      {
+        // Destructuring Function Parameter Object
+        // function displayPerson ({ firstName, lastName, age }) {
+        //   console.log(firstName);
+        //   console.log(lastName);
+        //   console.log(age);
+        // }
+        // const person = {
+        //   firstName: "Muhammad",
+        //   lastName: "Ilham",
+        //   age: 21,
+        // };
+        // displayPerson(person);
+      }
+
+      {
+        // Destructuring Function Parameter Array
+        // function sum([first, second]) {
+        //   console.log(first + second);
+        // }
+        // sum([1, 2])
+      }
+
+      {
+        // Default Value Destructuring array
+        // const names = ["Muhammad", "Joko", "Budi"];
+        // const [firstName, middleName = "Ilham", lastName = 21] = names;
+        // console.log(firstName);
+        // console.log(middleName);
+        // console.log(lastName);
+      }
+
+      {
+        // Default Value Destructuring Object
+        // const person = {
+        //   firstName: "Muhammad",
+        //   lastName: "Ilham",
+        // };
+        // const { firstName, middleName = "Joko", lastName } = person;
+        // console.log(firstName);
+        // console.log(middleName);
+        // console.log(lastName);
+      }
+
+      {
+        // Mengunakan Nama Alias pada Destructuring Object
+        const person = {
+          firstName: "Muhammad",
+          lastName: "Ilham",
+        };
+        const {
+          firstName: namaDepan,
+          middleName: namaTengah = "Joko",
+          lastName: namaBelakang,
+        } = person;
+        console.log(namaDepan);
+        console.log(namaTengah);
+        console.log(namaBelakang);
+      }
+    </script>
+  </body>
+</html>
